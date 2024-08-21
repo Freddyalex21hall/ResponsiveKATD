@@ -1,0 +1,173 @@
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+}
+.menu a{
+    color: white;
+    text-align: center;
+    padding: 1em 0.8em;
+    text-decoration: none;
+    display: block;
+}
+.menu a:hover{
+    background-color: rgb(255, 136, 115);
+}
+.menu-icon{
+    display: none;
+    font-size: 2em;
+    padding: 0.9em 1em;
+    cursor: pointer;
+    color: white;
+}
+.menu-items{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+.menu-items li{
+    flex: 1;
+}
+#menu-toggle{
+    display: none;
+}
+.menu{
+    background-color: rgb(75, 75, 75);
+    overflow: hidden;
+}
+img{
+    max-width: 100%;
+}
+.portada{
+    width: 40%;
+}
+.logo{
+    width: 5%;
+    border-radius: 100%;
+    margin-top: -3%;
+}
+.col3{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    font-family:sans-serif;
+    font-size: xx-large;
+    padding: 0.3em 0.3em 0.3em 0.3em;
+    text-align:justify;
+}
+.col3 p{
+    box-shadow: 0em 0.2em 0.2em 0em;
+    background-color: rgb(255, 255, 255) !important;
+    padding: 0.5em;
+}
+.thankyou{
+    width: 80%;
+    margin: 2em;
+}
+.Cronologia{
+    font-size: 300%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+iframe{
+    max-width: 100%;
+}
+.video{
+    width: 40%;
+    padding: 2em 2em;
+    display: inline-block;
+}
+.vid{
+    width: 100%;
+    height: 600px;
+}
+@media screen and (max-width: 1000px) and (min-width: 710px) {
+    nav{
+        width: 100%;
+    }
+    .menu a{
+        color: white ;
+        text-align: center;
+        padding: 0.9em 1em;
+        text-decoration: none;
+        display: block;
+    }
+    .menu a:hover{
+        background-color: rgb(255, 136, 115);
+    }
+    .menu-items{
+        flex-direction: column;
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        text-align: left;
+    }
+    #menu-toggle:checked + .menu-icon + .menu-items{
+        display: flex;
+    }
+    .logo{
+        display: none !important;
+    }
+    .portada{
+        width: 80%;
+    }
+    .col{
+        display: none ;
+    }
+    .col3{
+        width: 40%;
+    }
+    .video{
+        width: 40%;
+        padding: 2em 2em;
+        display: inline-block;
+    }
+    .vid{
+        width: 100%;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 709px){
+    nav{
+        width: 100%;
+    }
+    .menu a{
+        color: white ;
+        text-align: center;
+        padding: 0.9em 1em;
+        text-decoration: none;
+        display: block;
+    }
+    .menu a:hover{
+        background-color: rgb(255, 136, 115);
+    }
+    .menu-items{
+        flex-direction: column;
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        text-align: left;
+    }
+    #menu-toggle:checked + .menu-icon + .menu-items{
+        display: flex;
+    }
+    .logo{
+        width: 20%;
+    }
+    .portada{
+        width: 80%;
+    }
+    .col3{
+        width: 80%;
+    }
+    .video{
+        width: 80%;
+        padding: 2em 2em;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,235 @@
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.menu a{
+    color: white;
+    text-align: center;
+    padding: 1em 0.6em;
+    text-decoration: none;
+    display: block;
+}
+.menu a:hover{
+    background-color: rgb(255, 136, 115);
+}
+.menu-icon{
+    display: none;
+    font-size: 2em;
+    padding: 0.9em 1em;
+    cursor: pointer;
+    color: white;
+}
+.menu-items{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+.menu-items li{
+    flex: 1;
+}
+#menu-toggle{
+    display: none;
+}
+.menu{
+    background-color: rgb(75, 75, 75);
+    overflow: hidden;
+}
+.activado{
+    background-color: rgb(255, 136, 115);
+}
+.col2{
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.col2 p{
+    box-shadow: 0em 0.2em 0.2em 0em;
+    background-color: rgb(255, 241, 241) !important;    
+}
+img{
+    max-width: 100%;
+}
+.inicial{
+    width: 60%;
+}
+header p{
+    font-size: xx-large;
+}
+h1{
+    font-size: 300%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.primera{
+    width: 99%;
+    font-size: x-large;
+    box-shadow: 0em 0.3em 0.3em 0em;
+    background-color: rgb(255, 241, 241) !important;
+    padding: 0.2em;
+    margin: 0.8em 0em 0.8em 0em;
+}
+.uno{
+    width: 70%;
+}
+.dos{
+    width: 82%;
+}
+.colu{
+    width: 45%;
+    display: inline-block;
+}
+iframe{
+    padding: 1em;
+    width: 60%;
+    height: 600px;
+}
+.link{
+    margin: 5em 0;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.link h2{
+    text-decoration: solid;
+}
+.link p{
+    font-size: 1.2em;
+}
+.bot{
+    width: 35%;
+    display: inline-block;
+}
+.bot1{
+    background-color: rgb(224, 224, 224);
+    box-shadow: 0em 0.2em 0.2em 0em;
+}
+.enlace{
+    font-size: 6em;
+    background-color: dimgrey;
+    border-radius: 10%;
+}
+.enlace:hover{
+    background-color: silver;
+    color: indigo;
+}
+@media screen and (max-width: 1000px) and (min-width: 710px) {
+    nav{
+        width: 100%;
+    }
+    .menu a{
+        color: white ;
+        text-align: center;
+        padding: 0.9em 1em;
+        text-decoration: none;
+        display: block;
+    }
+    .menu a:hover{
+        background-color: rgb(255, 136, 115);
+    }
+    .menu-items{
+        flex-direction: column;
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        text-align: left;
+    }
+    #menu-toggle:checked + .menu-icon + .menu-items{
+        display: flex;
+    }
+    .logo{
+        display: none !important;
+    }
+    .portada{
+        width: 80%;
+    }
+    .sola{
+        width: 100%;
+    }
+    .solo{
+        width: 90%;
+    }
+    .primera{
+        width: 97.4%;
+    }
+    .uno{
+        width: 88%;
+    }
+    .dos{
+        width: 98%;
+    }
+    .colu{
+        width: 40%;
+        display: inline-block;
+    }
+    iframe{
+        padding: 1em;
+        width: 80%;
+        height: 600px;
+    }
+    .bot{
+        width: 90%;
+        margin: 0.5em 0em 0.5em 0em;
+    }
+}
+@media screen and (max-width: 709px){
+    nav{
+        width: 100%;
+    }
+    .menu a{
+        color: white ;
+        text-align: center;
+        padding: 0.9em 1em;
+        text-decoration: none;
+        display: block;
+    }
+    .menu a:hover{
+        background-color: rgb(255, 136, 115);
+    }
+    .menu-items{
+        flex-direction: column;
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        text-align: left;
+    }
+    #menu-toggle:checked + .menu-icon + .menu-items{
+        display: flex;
+    }
+    .logo{
+        width: 20%;
+    }
+    .portada{
+        width: 80%;
+    }
+    .sola{
+        width: 100%;
+    }
+    .solo{
+        width: 90%;
+    }
+    .primera{
+        width: 97.4%;
+    }
+    .uno{
+        width: 100%;
+    }
+    .dos{
+        width: 100%;
+    }
+    .colu{
+        width: 90%;
+    }
+    iframe{
+        padding: 1em;
+        width: 95%;
+        height: 600px;
+    }
+    .bot{
+        width: 90%;
+        margin: 0.5em 0em 0.5em 0em;
+    }
+}
